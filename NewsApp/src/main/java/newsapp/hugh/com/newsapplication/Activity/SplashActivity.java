@@ -10,6 +10,7 @@ import android.view.animation.AnimationSet;
 import android.view.animation.ScaleAnimation;
 import android.widget.RelativeLayout;
 
+import newsapp.hugh.com.newsapplication.Applacation.DataShare;
 import newsapp.hugh.com.newsapplication.R;
 
 public class SplashActivity extends Activity {
@@ -20,16 +21,12 @@ public class SplashActivity extends Activity {
         setContentView(R.layout.activity_splash);
 
         RelativeLayout rl_splash_layout = (RelativeLayout) findViewById(R.id.rl_splash_layout);
-
         AnimationSet mAS = new AnimationSet(true);
         ScaleAnimation mSA = new ScaleAnimation(0, 1,0,1,Animation.RELATIVE_TO_SELF,0.5f, Animation.RELATIVE_TO_SELF,0.5f);
-        mSA.setDuration(3000);
-
         AlphaAnimation mAA = new AlphaAnimation(0, 1);
-        mAA.setDuration(3000);
-
         mAS.addAnimation(mSA);
         mAS.addAnimation(mAA);
+        mAS.setDuration(2000);
         rl_splash_layout.setAnimation(mAS);
         mAS.start();
         /*动画状态监听*/
@@ -41,8 +38,17 @@ public class SplashActivity extends Activity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                startActivity(new Intent(SplashActivity.this,GuideActivity.class));
-                finish();
+                if(DataShare.getbooleandata("FirstOpen",true))
+                {
+                    DataShare.savebooleandata("FirstOpen",false);
+                    startActivity(new Intent(SplashActivity.this, GuideActivity.class));
+                    finish();
+                }
+                else
+                {
+                    startActivity(new Intent(SplashActivity.this,HomeActivity.class));
+                    finish();
+                }
             }
 
             @Override

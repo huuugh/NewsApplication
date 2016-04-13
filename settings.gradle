@@ -1,1 +1,1 @@
-include ':NewsApp'
+include ':NewsApp', ':SlidMenuLibrary'
