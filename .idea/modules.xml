@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NewsApp/NewsApp.iml" filepath="$PROJECT_DIR$/NewsApp/NewsApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NewsApplication.iml" filepath="$PROJECT_DIR$/NewsApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SlidMenuLibrary/SlidMenuLibrary.iml" filepath="$PROJECT_DIR$/SlidMenuLibrary/SlidMenuLibrary.iml" />
+    </modules>
+  </component>
+</project>
