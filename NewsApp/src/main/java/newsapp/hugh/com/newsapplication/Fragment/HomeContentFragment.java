@@ -11,12 +11,12 @@ import com.lidroid.xutils.view.annotation.ViewInject;
 
 import java.util.ArrayList;
 
-import newsapp.hugh.com.newsapplication.Page.BasePage;
-import newsapp.hugh.com.newsapplication.Page.GovAffairPage;
-import newsapp.hugh.com.newsapplication.Page.HomePage;
-import newsapp.hugh.com.newsapplication.Page.NewsCenterPage;
-import newsapp.hugh.com.newsapplication.Page.SettingPage;
-import newsapp.hugh.com.newsapplication.Page.SmartServicePage;
+import newsapp.hugh.com.newsapplication.PageOfHomeActivity.BasePage;
+import newsapp.hugh.com.newsapplication.PageOfHomeActivity.GovAffairPage;
+import newsapp.hugh.com.newsapplication.PageOfHomeActivity.HomePage;
+import newsapp.hugh.com.newsapplication.PageOfHomeActivity.NewsCenterPage;
+import newsapp.hugh.com.newsapplication.PageOfHomeActivity.SettingPage;
+import newsapp.hugh.com.newsapplication.PageOfHomeActivity.SmartServicePage;
 import newsapp.hugh.com.newsapplication.R;
 
 /**

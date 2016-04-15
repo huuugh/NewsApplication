@@ -15,7 +15,7 @@ public class NewsData4json
     {
         public List<Tagdata> children;
 
-        private class Tagdata
+        public class Tagdata
         {
             public String id;
             public int type;

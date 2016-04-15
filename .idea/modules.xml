@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/NewsApp/NewsApp.iml" filepath="$PROJECT_DIR$/NewsApp/NewsApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/NewsApplication.iml" filepath="$PROJECT_DIR$/NewsApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/SlidMenuLibrary/SlidMenuLibrary.iml" filepath="$PROJECT_DIR$/SlidMenuLibrary/SlidMenuLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
     </modules>
   </component>
 </project>

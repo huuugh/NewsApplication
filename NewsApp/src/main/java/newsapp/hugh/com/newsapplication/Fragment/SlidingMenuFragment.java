@@ -1,5 +1,6 @@
 package newsapp.hugh.com.newsapplication.Fragment;
 
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -49,8 +50,14 @@ public class SlidingMenuFragment extends BaseFragment {
         lv_slidingmenu_option.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                selecteditem=position;
+                selecteditem = position;
                 adapter.notifyDataSetChanged();
+
+                if (lisenter!=null)
+                {
+                    lisenter.swichpage(selecteditem);
+                    Log.e("SlidingMenuFragment","收到");
+                }
             }
         });
         super.InitEvent();
@@ -82,4 +89,18 @@ public class SlidingMenuFragment extends BaseFragment {
             return view;
         }
     }
+
+    /*写一个接口来给NewCenterPage调用，将侧边栏选中的按钮传递给NewCenterPage，用来决定显示哪个页面*/
+    private swichpageLisenter lisenter;
+
+    public interface swichpageLisenter
+    {
+        void swichpage(int position);
+    }
+
+    public void setOnswichpageLisenter(swichpageLisenter lisenter)
+    {
+        this.lisenter=lisenter;
+    }
+
 }
